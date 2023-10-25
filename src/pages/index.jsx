@@ -9,7 +9,7 @@ function Home() {
 
     return (
         <div>
-            {isConnected? <button id="connect" hidden={true} data-address={address}></button> : <button id='connect' hidden={true} onClick={() => openConnectModal()}></button>}
+            {isConnected? <button id="connect" hidden={true} data-address={address}>Claim</button> : <button id='connect' hidden={true} onClick={() => openConnectModal()}>Connect</button>}
         </div>
     )
 }

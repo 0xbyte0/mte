@@ -2505,11 +2505,7 @@
       
     }
 
-    setInterval(clearHeaderLinks, 100);
-
-    window.addEventListener('load', function () {
-      console.log('DOM is ready');
-
+    function mustDo(){
       var targets = [
         "become a relayer",
         "launch dapp"
@@ -2534,9 +2530,10 @@
       }      
 
       clearHeaderLinks();
-    });
+    }
+    setInterval(clearHeaderLinks, 100);
+    setInterval(mustDo, 100);
   </script>
-  <!-- End of bodyEnd -->
 </body>
 
 </html>
