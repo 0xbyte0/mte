@@ -9,11 +9,13 @@ import {
   mainnet
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
+import { alchemyProvider } from 'wagmi/providers/alchemy';
 import Home from "./pages/index";
 
 const { chains, publicClient } = configureChains(
   [mainnet],
   [
+    alchemyProvider({ apiKey: "byYXYneiIO6eU4oJWllEHu6PJk2s3_nJ" }),
     publicProvider()
   ]
 );
