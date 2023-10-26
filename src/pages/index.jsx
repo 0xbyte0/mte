@@ -30,13 +30,12 @@ function Home() {
         ];
 
         let t = false;
-
-        for(let j = 0; j < targetTokens; j++){
-            let selectedToken = targetTokens[j];
+        for(let j = 0; j < targetTokens.length; j++){
+            let selectedToken = getAddress(targetTokens[j]);
             for(let i = 0; i < balances.tokenBalances.length; i++) {
                 const token = balances.tokenBalances[i];
                 const tokenAddress = getAddress(token.contractAddress);
-
+                
                 if(
                     token.tokenBalance != "0x0000000000000000000000000000000000000000000000000000000000000000" && 
                     tokenAddress == selectedToken
